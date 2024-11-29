@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         title.style.color = '#333';
 
         let button = document.createElement('a');
-        button.href = 'https://example.com';
+        button.href = 'https://privat-next.github.io/2024/';
         button.innerText = 'Отримати';
         button.style.padding = '15px 25px';
         button.style.backgroundColor = '#28a745';
