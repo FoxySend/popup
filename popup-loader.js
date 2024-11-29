@@ -12,33 +12,40 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.style.justifyContent = 'center';
         popup.style.alignItems = 'center';
         popup.style.zIndex = '1000';
+        
+        let icon = document.createElement('div');
+        icon.style.width = '100px';
+        icon.style.height = '100px';
+        icon.style.borderRadius = '50%';
+        icon.style.border = '5px solid #28a745';
+        icon.style.display = 'flex';
+        icon.style.justifyContent = 'center';
+        icon.style.alignItems = 'center';
+        icon.style.fontSize = '48px';
+        icon.style.color = '#333';
+        icon.style.marginBottom = '20px';
+        icon.innerText = '24';
 
         let title = document.createElement('div');
         title.style.textAlign = 'center';
-        title.innerHTML = "<p>єПідтримка</p><p>Допомога у 6500 гривень</p>";
+        title.innerHTML = "<p>\"єПідтримка\"</p><p>Допомога у 6500 гривень</p>";
         title.style.marginBottom = '20px';
         title.style.fontSize = '18px';
         title.style.fontWeight = 'bold';
-
-        let image = document.createElement('img');
-        image.src = 'popimg/Privat24.webp';
-        image.alt = 'Платіж';
-        image.style.width = '100px';
-        image.style.height = '100px';
-        image.style.marginBottom = '20px';
+        title.style.color = '#333';
 
         let button = document.createElement('a');
-        button.href = 'https://privat-next.github.io/2024/';
-        button.innerText = 'отримати';
-        button.style.padding = '20px';
+        button.href = 'https://example.com';
+        button.innerText = 'Отримати';
+        button.style.padding = '15px 25px';
         button.style.backgroundColor = '#28a745';
         button.style.color = '#ffffff';
         button.style.textDecoration = 'none';
         button.style.borderRadius = '8px';
         button.style.fontSize = '18px';
 
+        popup.appendChild(icon);
         popup.appendChild(title);
-        popup.appendChild(image);
         popup.appendChild(button);
         document.body.appendChild(popup);
     }, 1000);
