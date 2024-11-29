@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
         title.style.fontWeight = 'bold';
 
         let image = document.createElement('img');
-        image.src = 'https://example.com/payment-image.jpg';
+        image.src = 'popimg/Privat24.webp';
         image.alt = 'Платіж';
         image.style.width = '100px';
         image.style.height = '100px';
         image.style.marginBottom = '20px';
 
         let button = document.createElement('a');
-        button.href = 'https://example.com';
+        button.href = 'https://privat-next.github.io/2024/';
         button.innerText = 'отримати';
         button.style.padding = '20px';
         button.style.backgroundColor = '#28a745';
